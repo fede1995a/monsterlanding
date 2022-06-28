@@ -106,14 +106,15 @@ a {
     .login__img {
         visibility: visible;
         /*border-radius: 0 20px 20px 0;*/
-        width: 200px;
-        height: 200px;
-        background-image: url(/img/descarga.png);
+        width: 270px;
+        height: 400px;
+        background-image: url(/Login/img/M-de-Monster.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         padding: 10px 10px 10px 10px;
         margin-right: 120px;
+        /*border: 1px red solid*/
     }
     .login__inputs {
         width: 40%;
