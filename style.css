@@ -275,6 +275,7 @@ button:hover {
     height: 60px;
     width: 100px;
     border-radius: 5px;
+    border: 1px lime solid;
 }
 
 .about-card span {
