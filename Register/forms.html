@@ -10,43 +10,45 @@
 </head>
 
 <body>
-    <div class="container-items">
-        <h1>Registrate</h1>
-        <form>
-            <div class="item">
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" />
-            </div>
-            <div class="item">
-                <label for="surname">Apellido:</label>
-                <input type="text" id="surname" />
-            </div>
-            <div class="item">
-                Sexo:
-                <input type="radio" name="genero" id="hombre" />
-                <label for="hombre">Hombre</label>
-                <input type="radio" name="genero" id="mujer" />
-                <label for="mujer">Mujer</label>
-            </div>
-            <div class="item">
-                <label for="email">Correo:</label>
-                <input type="email" id="email" />
-            </div>
-            <div>
-                <input type="checkbox" name="news" id="form-news" />
-                <label for="form-news">Deseo recibir información sobre novedades y ofertas
+    <div class="section-container">
+        <div class="container-items">
+            <img src="/Register/img/M-de-Monster.png" alt="imgg" class="imgg">
+            <!-- <h1>Registrate!</h1> -->
+            <form>
+                <div class="item">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" class="border" />
+                </div>
+                <div class="item">
+                    <label for="surname">Apellido:</label>
+                    <input type="text" id="surname" class="border" />
+                </div>
+                <div class="item">
+                    Sexo:
+                    <input type="radio" name="genero" id="hombre" class="radio" />
+                    <label for="hombre">Hombre</label>
+                    <input type="radio" name="genero" id="mujer" class="radio" />
+                    <label for="mujer">Mujer</label>
+                </div>
+                <div class="item">
+                    <label for="email">Correo:</label>
+                    <input type="email" id="email" class="border" />
+                </div>
+                <div class="item">
+                    <input type="checkbox" name="news" id="form-news" class="radio" />
+                    <label for="form-news">Deseo recibir información sobre novedades y ofertas
           </label>
-            </div>
-            <div class="item">
-                <input type="checkbox" name="terms" id="form-terms" />
-                <label for="form-terms">
+                </div>
+                <div class="item">
+                    <input type="checkbox" name="terms" id="form-terms" class="radio" />
+                    <label for="form-terms">
             Declaro haber leido y aceptar las condiciones generales del programa
             y la normativa sobre protección de datos.
           </label>
-            </div>
-            <button type="submit" class="btn">Enviar</button>
-            <!-- <input type="submit" value="enviar" />  Esta opción tambien es correcta, recomiendo utilizar la otra.-->
-        </form>
+                </div>
+                <button type="submit" class="btn">Registrarse!</button>
+            </form>
+        </div>
     </div>
 </body>
 
