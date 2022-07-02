@@ -1,302 +1,314 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@200&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    list-style: none;
-    text-decoration: none;
-}
-
-html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 100px;
-}
-
-body {
-    width: 100%;
-    /*background: #131415;*/
-}
-
-:root {
-    --yellow: #ffc200;
-    --black: #202020;
-    --grey: #2d3640;
-    --green: lime;
-}
-
-.section-container {
-    background: #202020;
-}
-
-
-/*Header*/
-
-.header {
-    margin: 0 auto;
-    max-width: 1300px;
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 80px 0px 50px;
-}
-
-.header-container {
-    position: sticky;
-    top: 0%;
-    z-index: 9999;
-}
-
-.logo-container {
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.logo-container img {
-    height: 90%;
-}
-
-.navbar,
-.navbar-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.navbar-list {
-    gap: 50px;
-}
-
-.navbar i {
-    font-size: 40px;
-    color: white;
-    cursor: pointer;
-    display: none;
-}
-
-#toggle-menu {
-    display: none;
-}
-
-.navbar a {
-    color: white;
-    color: var(--green);
-    font-size: 22px;
-}
-
-.navbar-list li:last-child>a {
-    border: 1px solid var(--green);
-    font-size: 14px;
-    padding: 8px 40px;
-    border-radius: 3px;
-    transition: all 0.3s linear;
-}
-
-.navbar-list li:last-child>a:hover {
-    background-color: white;
-    color: var(--grey);
-    transition: all 0.3s linear;
-    font-weight: 700;
-}
-
-@media (max-width: 992px) {
-    .header {
-        padding: 0px 50px 0px 10px;
-    }
-    .navbar i {
-        display: block;
-    }
-    .navbar-list {
-        position: absolute;
-        background-color: var(--black);
-        flex-direction: column;
-        top: 100px;
-        right: 0;
-        width: 100%;
-        height: calc(100vh - 100px);
-        display: none;
-        z-index: 9999;
-    }
-    #toggle-menu:checked+.navbar-list {
-        display: flex;
-    }
-}
-
-
-/*hero*/
-
-.section-container {
-    background-color: var(--black);
-}
-
-.section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    padding: 70px 0px;
-    width: 95%;
-    max-width: 1300px;
-    /*border: 2px red solid;*/
-}
-
-button {
-    background-color: var(--green);
-    border: 1px solid black;
-    outline: none;
-    width: 180px;
-    height: 40px;
-    color: white;
-    font-weight: 700;
-    font-size: 14px;
-    cursor: pointer;
-    transition: all 0.4s linear;
-}
-
-button:hover {
-    background-color: rgb(241, 33, 33);
-    transition: all 0.4s linear;
-}
-
-
-/**/
-
-#hero {
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 70px 50px;
-}
-
-.description-container {
-    display: flex;
-    flex-direction: column;
-    flex: 1 1 50%;
-    gap: 40px;
-}
-
-.text-container {
-    max-width: max(40%, 300px);
-    color: whitesmoke;
-}
-
-.text-container h1 {
-    font-weight: 600;
-    font-size: 45px;
-    line-height: 45px;
-}
-
-.text-container p {
-    font-size: 15px;
-    font-weight: 300;
-}
-
-.hero-img {
-    background-image: url(/assets/pack-monster2.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-width: 550px;
-    width: 30%;
-    height: 350px;
-    border-radius: 5px;
-    transition: all 0.4s linear;
-}
-
-.primary-button {
-    color: #202020;
-    background: lime;
-}
-
-@media (max-width: 768px) {
-    .hero-img {
-        display: none;
-    }
-    .description-container {
-        justify-content: center;
-        align-items: center;
-    }
-    .text-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-}
-
-
-/* Section CONTACTO */
-
-#about-us {
-    gap: 15%;
-    flex-wrap: wrap;
-    margin-top: 150px;
-    /* border: 1px solid red;*/
-}
-
-.about-img {
-    background-image: url(./assets/M-de-Monster.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 500px;
-    width: 350px;
-    border-radius: 5px;
-}
-
-.about-content {
-    height: 250px;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    /*border: 1px solid red;*/
-}
-
-.adress {
-    font-weight: 700;
-    color: #ffc200;
-}
-
-.about-cards-container {
-    display: flex;
-    gap: 30px;
-}
-
-.about-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-    height: 60px;
-    width: 100px;
-    border-radius: 5px;
-    border: 1px limegreen solid;
-}
-
-.about-card span {
-    font-weight: 700;
-    font-size: 20px;
-}
-
-.section-title {
-    color: lime;
-}
-
-.section-p {
-    color: whitesmoke;
-}
-
-@media (max-width: 768px) {
-    #about-us {
-        flex-direction: column;
-        gap: 20px;
-    }
-}
-
-
-/* SECTION PRODUCTS*/
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@200&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            list-style: none;
+            text-decoration: none;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 100px;
+        }
+        
+        body {
+            width: 100%;
+            /*background: #131415;*/
+        }
+        
+         :root {
+            --yellow: #ffc200;
+            --black: #202020;
+            --grey: #2d3640;
+            --green: lime;
+        }
+        
+        .section-container {
+            background: #202020;
+        }
+        /*Header*/
+        
+        .header {
+            margin: 0 auto;
+            max-width: 1300px;
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 80px 0px 50px;
+        }
+        
+        .header-container {
+            position: sticky;
+            top: 0%;
+            z-index: 9999;
+        }
+        
+        .logo-container {
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo-container img {
+            height: 90%;
+        }
+        
+        .navbar,
+        .navbar-list {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .navbar-list {
+            gap: 50px;
+        }
+        
+        .navbar i {
+            font-size: 40px;
+            color: white;
+            cursor: pointer;
+            display: none;
+        }
+        
+        #toggle-menu {
+            display: none;
+        }
+        
+        .navbar a {
+            color: white;
+            color: var(--green);
+            font-size: 22px;
+        }
+        
+        .navbar-list li:last-child>a {
+            border: 1px solid var(--green);
+            font-size: 14px;
+            padding: 8px 40px;
+            border-radius: 3px;
+            transition: all 0.3s linear;
+        }
+        
+        .navbar-list li:last-child>a:hover {
+            background-color: white;
+            color: var(--grey);
+            transition: all 0.3s linear;
+            font-weight: 700;
+        }
+        
+        @media (max-width: 992px) {
+            .header {
+                padding: 0px 50px 0px 10px;
+            }
+            .navbar i {
+                display: block;
+            }
+            .navbar-list {
+                position: absolute;
+                background-color: var(--black);
+                flex-direction: column;
+                top: 100px;
+                right: 0;
+                width: 100%;
+                height: calc(100vh - 100px);
+                display: none;
+                z-index: 9999;
+            }
+            #toggle-menu:checked+.navbar-list {
+                display: flex;
+            }
+        }
+        /*hero*/
+        
+        .section-container {
+            background-color: var(--black);
+        }
+        
+        .section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            padding: 70px 0px;
+            width: 95%;
+            max-width: 1300px;
+            /*border: 2px red solid;*/
+        }
+        
+        button {
+            background-color: var(--green);
+            border: 1px solid black;
+            outline: none;
+            width: 180px;
+            height: 40px;
+            color: white;
+            font-weight: 700;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.4s linear;
+        }
+        
+        button:hover {
+            background-color: rgb(241, 33, 33);
+            transition: all 0.4s linear;
+        }
+        /**/
+        
+        #hero {
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 70px 50px;
+        }
+        
+        .description-container {
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 50%;
+            gap: 40px;
+        }
+        
+        .text-container {
+            max-width: max(40%, 300px);
+            color: whitesmoke;
+        }
+        
+        .text-container h1 {
+            font-weight: 600;
+            font-size: 45px;
+            line-height: 45px;
+        }
+        
+        .text-container p {
+            font-size: 15px;
+            font-weight: 300;
+        }
+        
+        .hero-img {
+            background-image: url(/assets/pack-monster2.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-width: 550px;
+            width: 30%;
+            height: 350px;
+            border-radius: 5px;
+            transition: all 0.4s linear;
+        }
+        
+        .primary-button {
+            color: #202020;
+            background: lime;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-img {
+                display: none;
+            }
+            .description-container {
+                justify-content: center;
+                align-items: center;
+            }
+            .text-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+        }
+        /* Section CONTACTO */
+        
+        #about-us {
+            gap: 15%;
+            flex-wrap: wrap;
+            margin-top: 150px;
+            /* border: 1px solid red;*/
+        }
+        
+        .about-img {
+            background-image: url(./assets/M-de-Monster.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 500px;
+            width: 350px;
+            border-radius: 5px;
+        }
+        
+        .about-content {
+            height: 250px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            /*border: 1px solid red;*/
+        }
+        
+        .adress {
+            font-weight: 700;
+            color: #ffc200;
+        }
+        
+        .about-cards-container {
+            display: flex;
+            gap: 30px;
+        }
+        
+        .about-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            height: 60px;
+            width: 100px;
+            border-radius: 5px;
+            border: 1px limegreen solid;
+        }
+        
+        .about-card span {
+            font-weight: 700;
+            font-size: 20px;
+        }
+        
+        .section-title {
+            color: lime;
+        }
+        
+        .section-p {
+            color: whitesmoke;
+        }
+        
+        @media (max-width: 768px) {
+            #about-us {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+        /* SECTION PRODUCTS*/
+        
+        .title-container {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .products-cards-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .products-card {
+            width: 200px;
+            height: 450px;
+            border: 1px red solid;
+            color: var(--yellow);
+        }
+        
+        .product-card-img {
+            background-image: url(/assets/Monster-Mango.png);
+        }
