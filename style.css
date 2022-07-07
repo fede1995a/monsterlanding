@@ -335,14 +335,14 @@
         /*border: 1px red solid;*/
         border-radius: 2rem;
         color: var(--yellow);
-        box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.1);
         margin: 1rem 1rem;
-        transition: all 0.4s linear
+        transition: all 0.2s linear
     }
     
     .products-card:hover {
-        width: 205px;
-        height: 515px;
+        box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.1);
+        /*width: 205px;
+        height: 515px;*/
     }
     
     .product-title {
@@ -379,6 +379,12 @@
         font-size: 1.2rem;
         font-weight: var(--medium);
         padding: 10px 20px;
+    }
+    
+    .btn-products:hover {
+        background-color: var(--green);
+        color: var(--black);
+        transition: all 0.4s linear;
     }
     
     @media (max-width: 768px) {
