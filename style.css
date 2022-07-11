@@ -490,19 +490,9 @@ body {
         max-width: 600px;
         text-align: center;
     }
-    /*.footer-info {
-        align-items: center;
-        gap: 20px;*/
 }
 
 .footer-terms {
     justify-content: center;
     text-align: center;
-}
-
-.linea {
-    display: flex;
-    height: 3px;
-    background: red;
-    width: 700px;
 }
