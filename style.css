@@ -164,7 +164,7 @@ body {
 }
 
 .primary-button:hover {
-    background-color: rgb(241, 33, 33);
+    background-color: limegreen;
     transition: all 0.4s linear;
 }
 
